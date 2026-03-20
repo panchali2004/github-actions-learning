@@ -73,6 +73,10 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+          - name: Print environment
+        run: |
+          echo "Environment: ${{ env.NODE_ENV }}"
+          echo "Log Level: ${{ env.LOG_LEVEL }}"
       - uses: actions/checkout@v3
       
       - uses: actions/setup-node@v3
