@@ -1,18 +1,14 @@
 name: Hello World Workflow
 
 on:
-  push:
-    branches: [main, develop]
   workflow_dispatch:
 
 jobs:
   hello:
-    name: Say Hello
     runs-on: ubuntu-latest
-    
     steps:
-      - name: Print hello message
-        run: echo "🎉 Hello from GitHub Actions!"
+      - name: Say Hello
+        run: echo "Hello World!"
       
       - name: Print current time
         run: date
